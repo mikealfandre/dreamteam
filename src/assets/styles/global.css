@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Monoton', cursive;
+    font-style: regular;
+    font-weight: 400;
+    src: url('../fonts/fontsG/Monoton/Monoton-Regular.ttf'); /* IE9 Compat Modes */
+    src: local('Monoton'), local('Monoton'),
+         url('../fonts/fontsG/Monoton/Monoton-Regular.ttf') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/fontsG/Monoton/Monoton-Regular.ttf') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/fontsG/Monoton/Monoton-Regular.ttf') format('woff'), /* Modern Browsers */
+         url('../fonts/fontsG/Monoton/Monoton-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/fontsG/Monoton/Monoton-Regular.ttf') format('svg'); /* Legacy iOS */
+  }
+  body {
+    font-family: 'Monoton';
+  }
