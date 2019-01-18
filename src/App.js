@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import globalStyles from '../src/assets/styles/global.css';
+
 
 
 class App extends Component {
@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <div className="App">
         
-          <img src={logo} className="App-logo" alt="logo" />
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
 
           <div class="title">Hello</div>
           <div style={{fontFamily: 'Avenir'}}>Hello</div>
