@@ -1,0 +1,15 @@
+.Generate-div {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Generate-div button {
+    color: #FFF;
+    background-color: #2aabe2;
+    border: none;
+    border-radius: 5px;
+    padding: 25px;
+    font-size: 40px;
+  }

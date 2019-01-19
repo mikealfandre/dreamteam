@@ -6,19 +6,19 @@ let players = [
         id: "1"
     },
     {
-        firstName: "Alex",
+        firstName: "Joe",
         lastName: "Abrines",
         country: "Spain",
         id: "2"
     },
     {
-        firstName: "Alex",
+        firstName: "Carol",
         lastName: "Abrines",
         country: "Spain",
         id: "3"
     },
     {
-        firstName: "Alex",
+        firstName: "Bill",
         lastName: "Abrines",
         country: "Spain",
         id: "4"
