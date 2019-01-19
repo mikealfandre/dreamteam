@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import './GenerateTeam.css'
+import PlayerCard from './PlayerCard/PlayerCard'
 
 
 
@@ -10,7 +11,8 @@ class GenerateTeam extends Component {
         super()
         this.state = {
             players: [],
-            displayPlayers: false
+            displayPlayers: false,
+            count: 0
         }
         
         this.generateArray = this.generateArray.bind( this );
@@ -32,48 +34,78 @@ generateArray(){
      displayPlayers: !this.state.displayPlayers
  })
 
-    // let playerArray = this.state.players.map(player => 
-    // (<div key={player.id}> {player.firstName + ' ' + player.lastName}</div>) )
-    // console.log(playerArray)
-
-    // this.setState({
-    //     players: [playerArray]
-    // })
-
+ let randomArray = this.shuffleCards(this.state.players)
+ 
+ this.setState({
+     players: randomArray
+ })
+ 
 
 }
 
+shuffleCards(array){
+
+    let i = array.length, j = 0, temp;
+
+    while(i--){
+        j = Math.floor(Math.random() * (i + 1));
+
+        temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+
+    }
+    return array;
+
+}
+
+
 render(){
 
-    // let playerArray = this.state.players.map(player => 
-    // (<div key={player.id}> {player.firstName + ' ' + player.lastName}</div>) )
-    // console.log(playerArray)
-
-   let playerss = []
+   
+    const {players} = this.state;
+    let cutPlayers = players.slice(0, 5)
+    console.log(cutPlayers)
+    
+    
+    let playerss = []
    
     if (this.state.displayPlayers){
 
-            playerss = this.state.players.map((player, index) => {
-                return <p key={player.id}> {player.firstName}</p>
-                })
-        }
-
-       let playerss1 = playerss[Math.floor(Math.random() * playerss.length)];
-       let playerss2 = playerss[Math.floor(Math.random() * playerss.length)];
-       let playerss3 = playerss[Math.floor(Math.random() * playerss.length)];
-       let playerss4 = playerss[Math.floor(Math.random() * playerss.length)];
-
+            
+        playerss = 
         
+                <div>
+
+                {cutPlayers.map((player, index) => {
+                return <PlayerCard key={player.id} firstName={player.firstName} lastName={player.lastName} country={player.country} />
+                })}
+                
+                </div>
+                
+            }
+            
+
     return(
         <div>
             <div className="Generate-div">
             <button  onClick={this.generateArray} >Generate</button>
             </div>
             
-            {playerss1}
-            {/* {playerss2}
+            {/* {playerss1}
+            {playerss2}
             {playerss3}
             {playerss4} */}
+
+            {playerss}
+
+           
+
+            
+
+
+
+
         </div>
     )
 

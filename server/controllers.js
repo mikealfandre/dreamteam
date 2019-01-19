@@ -6,22 +6,58 @@ let players = [
         id: "1"
     },
     {
-        firstName: "Joe",
-        lastName: "Abrines",
-        country: "Spain",
+        firstName: "James",
+        lastName: "Harden",
+        country: "USA",
         id: "2"
     },
     {
-        firstName: "Carol",
-        lastName: "Abrines",
-        country: "Spain",
+        firstName: "LeBron",
+        lastName: "James",
+        country: "USA",
         id: "3"
     },
     {
-        firstName: "Bill",
-        lastName: "Abrines",
+        firstName: "Ricky",
+        lastName: "Rubio",
         country: "Spain",
         id: "4"
+    },
+    {
+        firstName: "John",
+        lastName: "Wall",
+        country: "USA",
+        id: "5"
+    },
+    {
+        firstName: "Greek",
+        lastName: "Freak",
+        country: "Greece",
+        id: "6"
+    },
+    {
+        firstName: "Jake",
+        lastName: "Layman",
+        country: "USA",
+        id: "7"
+    },
+    {
+        firstName: "Kevin",
+        lastName: "Huerter",
+        country: "USA",
+        id: "8"
+    },
+    {
+        firstName: "Manu",
+        lastName: "Ginobli",
+        country: "Argentina",
+        id: "9"
+    },
+    {
+        firstName: "Jimmer",
+        lastName: "Freddette",
+        country: "China",
+        id: "10"
     },
 
 ];
