@@ -3,60 +3,80 @@ let players = [
         firstName: "Alex",
         lastName: "Abrines",
         country: "Spain",
+        position: "SG",
+        team: "OKC",
         id: "1"
     },
     {
         firstName: "James",
         lastName: "Harden",
         country: "USA",
+        position: "SG",
+        team: "Rockets",
         id: "2"
     },
     {
         firstName: "LeBron",
         lastName: "James",
         country: "USA",
+        position: "G.O.A.T.",
+        team: "Lakers",
         id: "3"
     },
     {
         firstName: "Ricky",
         lastName: "Rubio",
         country: "Spain",
+        position: "PG",
+        team: "Jazz",
         id: "4"
     },
     {
         firstName: "John",
         lastName: "Wall",
         country: "USA",
+        position: "PG",
+        team: "Wizards",
         id: "5"
     },
     {
         firstName: "Greek",
         lastName: "Freak",
         country: "Greece",
+        position: "PF",
+        team: "Bucks",
         id: "6"
     },
     {
         firstName: "Jake",
         lastName: "Layman",
         country: "USA",
+        position: "SF",
+        team: "Trail Blazers",
         id: "7"
     },
     {
         firstName: "Kevin",
         lastName: "Huerter",
         country: "USA",
+        position: "SG",
+        team: "Hawks",
         id: "8"
     },
     {
         firstName: "Manu",
         lastName: "Ginobli",
         country: "Argentina",
+        position: "SG",
+        team: "Spurs",
         id: "9"
     },
     {
         firstName: "Jimmer",
         lastName: "Freddette",
         country: "China",
+        position: "PG",
+        team: "Shanghai Sharks",
         id: "10"
     },
 

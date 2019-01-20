@@ -75,10 +75,10 @@ render(){
             
         playerss = 
         
-                <div>
+                <div className="Card-container">
 
                 {cutPlayers.map((player, index) => {
-                return <PlayerCard key={player.id} firstName={player.firstName} lastName={player.lastName} country={player.country} />
+                return <PlayerCard key={player.id} firstName={player.firstName} lastName={player.lastName} country={player.country} team={player.team} position={player.position} />
                 })}
                 
                 </div>
@@ -89,7 +89,7 @@ render(){
     return(
         <div>
             <div className="Generate-div">
-            <button  onClick={this.generateArray} >Generate</button>
+            <button  onClick={this.generateArray} >GENERATE TEAM</button>
             </div>
             
             {/* {playerss1}

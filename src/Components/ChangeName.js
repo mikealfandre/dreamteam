@@ -3,32 +3,32 @@
 
 
 
-render (){
+// render (){
 
-return(
+// return(
 
-<div>
-    {
-        this.state.editItem ?
+// <div>
+//     {
+//         this.state.editItem ?
 
-        <button onClick={() => this.handleClick()} > Edit </button> :
-        <div>
-        <input />
-            <button onClick={() => this.handleClick()}>submit</button>
+//         <button onClick={() => this.handleClick()} > Edit </button> :
+//         <div>
+//         <input />
+//             <button onClick={() => this.handleClick()}>submit</button>
         
-        <input />
-        </div>
+//         <input />
+//         </div>
         
 
 
 
-    }
+//     }
 
-</div>
-
-
+// </div>
 
 
-)
 
-}
+
+// )
+
+// }

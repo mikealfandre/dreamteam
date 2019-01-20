@@ -32,12 +32,12 @@ class App extends Component {
         
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
 
-          {/* <div>
-            <p>Dream Team</p>
-            <p>Generator</p>
+          <div className="main">
+            <p id="dream">Dream Team</p>
+            <p id="gen">GENERATOR</p>
           </div>
 
-          <div> Sidebar
+          {/* <div> Sidebar
             <SavedTeams />
           </div>
 

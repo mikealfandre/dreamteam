@@ -1,6 +1,58 @@
 .playercard {
-    width: 100px;
-    height: 300px;
-    border: 2px solid black;
+    height: 200px;
+    width: 125px;
+    /* border: 3px solid black; */
+    background-color: #88f8fe;
+    border-radius: 5%;
+    margin-top: 10px;
+    padding: 12px;
+    
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    position: relative;
+
 }
+
+.playercard p {
+    
+    font-family: 'Righteous';
+    text-transform: uppercase;
+    color: #EF1E1E;
+    text-shadow: 1.5px 1.5px 1px rgb(68, 214, 240);
+    
+    
+}
+
+.playercard h4{
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    font-size: 1.2rem;
+    line-height: 19px;
+    text-align: center;
+    font-family: Righteous;
+    text-transform: uppercase;
+    color: #EF1E1E;
+    text-shadow: 1.5px 1.5px 1px rgb(68, 214, 240);
+    border-bottom: 3px solid rgb(255, 178, 90);
+    
+    
+
+}
+#absBottom{
+    position: absolute;
+    bottom: 20px;
+}
+#abs2{
+    position: absolute;
+    bottom: 50px;
+    margin-top: 30px;
+}
+/* #abs3{
+    position: absolute;
+    bottom: 80px;
+} */
