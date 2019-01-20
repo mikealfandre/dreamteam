@@ -1,5 +1,12 @@
 .main {
-  margin-top: 100px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.main2 {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,15 +17,16 @@
 #dream {
   color: #78FFF7;
   font-family: "Mr Dafoe";
-  font-size: 60px;
+  font-size: 100px;
   position: relative;
-  top: 22px;
+  top: 33px;
 }
 #gen{
   color: #99FF9D;
   font-family: "Monoton";
-  font-size: 50px;
+  font-size: 80px;
 }
+
 
 
 

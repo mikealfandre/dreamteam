@@ -4,6 +4,8 @@ import axios from 'axios'
 
 import './App.css';
 import GenerateTeam from './Components/GenerateTeam/GenerateTeam'
+import SavedTeams from "./Components/GenerateTeam/SavedTeams/SavedTeams"
+import SaveButton from "./Components/GenerateTeam/SavedTeams/SaveButton"
 
 
 
@@ -28,27 +30,29 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="main">
         
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
 
-          <div className="main">
+          <div className='main2'>
             <p id="dream">Dream Team</p>
             <p id="gen">GENERATOR</p>
           </div>
 
-          {/* <div> Sidebar
+          
+
+          
+
+          
+          <div>
+            <GenerateTeam />
+          </div>
+          
+          <div>
             <SavedTeams />
           </div>
 
           
-
-          <div>
-            <CardContainer />
-          </div> */}
-          <div>
-            <GenerateTeam />
-          </div>
          
           
       </div>

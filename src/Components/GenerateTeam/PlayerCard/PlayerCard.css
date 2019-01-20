@@ -20,10 +20,10 @@
 
 .playercard p {
     
-    font-family: 'Righteous';
+    font-family: Montserrat;
     text-transform: uppercase;
     color: #EF1E1E;
-    text-shadow: 1.5px 1.5px 1px rgb(68, 214, 240);
+    /* text-shadow: 1.5px 1.5px 1px rgb(68, 214, 240); */
     
     
 }
@@ -31,13 +31,14 @@
 .playercard h4{
     margin-bottom: 30px;
     padding-bottom: 15px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 19px;
     text-align: center;
-    font-family: Righteous;
+    font-family: Montserrat;
+    font-weight: bold;
     text-transform: uppercase;
     color: #EF1E1E;
-    text-shadow: 1.5px 1.5px 1px rgb(68, 214, 240);
+    /* text-shadow: 1.5px 1.5px 1px rgb(68, 214, 240); */
     border-bottom: 3px solid rgb(255, 178, 90);
     
     

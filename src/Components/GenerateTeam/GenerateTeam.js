@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import './GenerateTeam.css'
 import PlayerCard from './PlayerCard/PlayerCard'
+import SaveButton from './SavedTeams/SaveButton'
 
 
 
@@ -39,6 +40,8 @@ generateArray(){
  this.setState({
      players: randomArray
  })
+
+ 
  
 
 }
@@ -65,12 +68,12 @@ render(){
    
     const {players} = this.state;
     let cutPlayers = players.slice(0, 5)
-    console.log(cutPlayers)
+    
     
     
     let playerss = []
    
-    if (this.state.displayPlayers){
+   // if (this.state.displayPlayers){
 
             
         playerss = 
@@ -83,7 +86,8 @@ render(){
                 
                 </div>
                 
-            }
+            //}
+
             
 
     return(
@@ -97,7 +101,12 @@ render(){
             {playerss3}
             {playerss4} */}
 
+           <SaveButton dreamteam1={cutPlayers} />
+           
+           
             {playerss}
+
+
 
            
 

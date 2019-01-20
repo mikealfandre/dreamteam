@@ -85,47 +85,12 @@ let players = [
 
 let teams = [
 
-{   
-    teamID: 1,
-    teamName: 'Jazz',
-    idOne: 1,
-    idTwo: 2,
-    idThree: 3,
-    idFive: 4,
-    idSix: 5
-},
-{   
-    teamID: 2,
-    teamName: 'Cats',
-    idOne: 1,
-    idTwo: 2,
-    idThree: 3,
-    idFive: 4,
-    idSix: 5
-},
-{   
-    teamID: 3,
-    teamName: 'Kings',
-    idOne: 1,
-    idTwo: 2,
-    idThree: 3,
-    idFive: 4,
-    idSix: 5
-},
-{   
-    teamID: 4,
-    teamName: 'Dogs',
-    idOne: 1,
-    idTwo: 2,
-    idThree: 3,
-    idFive: 4,
-    idSix: 5
-},
+
 
 
 ]
 
-let teamID = 5;
+let teamID = 0;
 
 
 module.exports = {
@@ -138,20 +103,21 @@ module.exports = {
     },
     
     saveTeam: (req, res) => { // (create)
-            let {teamName, id1, id2, id3, id4, id5} = req.body
+            let {teamName, idOne, idTwo, idThree, idFour, idFive} = req.body
             
             const newTeam = {
                 teamID: teamID,
-                teamName: req.body.teamName,
-                idOne: id1,
-                idTwo: id2,
-                idThree: id3,
-                idFour: id4,
-                idFive: id5
+                teamName: teamName,
+                idOne: idOne,
+                idTwo: idTwo,
+                idThree: idThree,
+                idFour: idFour,
+                idFive: idFive
             }
             
             teamID++
             teams.push(newTeam)
+           
             
             
             res.status(200).send(teams)
