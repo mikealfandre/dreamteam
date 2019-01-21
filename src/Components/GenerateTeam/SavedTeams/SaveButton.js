@@ -9,7 +9,8 @@ class SaveButton extends Component{
         this.state = {
 
             teamName: "",
-            dreamteam: []
+            dreamteam: [],
+            teams:[]
 
         }
         
@@ -21,6 +22,7 @@ class SaveButton extends Component{
     updateUserInput(val){
         this.setState({
             teamName: val
+            
         })
         console.log('userinput', this.state.teamName)
     }
@@ -30,34 +32,30 @@ class SaveButton extends Component{
         // console.log('dreamteam', 'hi', dreamteam)
     }
     
-
-
-    saveTeam(dreamteam){
-        axios.post('/api/saveteam', {dreamteam})
+        
+    
+saveTeam(obj){
+        
+        
+    
+        axios.post('/api/saveteam', obj)
         .then((response) => {
             this.setState({
-                dreamteam: response.data
+                teams: response.data
             })
+            
         })
         
-
         
     }
-
+    
 
 
     render(){
-        console.log('state', this.state.dreamteam)
+        
 
         const {dreamteam1} = this.props
-        // const newDreamTeam = []
-        // console.log(dreamteam1)
-        // for(let i=0;i<dreamteam1.length;i++){
-        //     newDreamTeam.push(dreamteam1[i]);
-
-        // }
-        // newDreamTeam.teamName = this.state.teamName
-        // console.log('NewDT', newDreamTeam)
+        
         
         let newDreamTeam = {
             teamName: '',
@@ -74,7 +72,9 @@ class SaveButton extends Component{
         newDreamTeam.idFour = dreamteam1[3]
         newDreamTeam.idFive = dreamteam1[4]
 
-        console.log('State', this.state.dreamteam)
+        
+
+        
         
         
         

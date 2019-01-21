@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   
 }
 .main2 {
@@ -26,6 +27,16 @@
   font-family: "Monoton";
   font-size: 80px;
 }
+
+.saved-teams-container{
+  display: flex;
+  position: absolute;
+  left: 40px;
+  top: 300px;
+  font-family: Montserrat;
+}
+
+
 
 
 

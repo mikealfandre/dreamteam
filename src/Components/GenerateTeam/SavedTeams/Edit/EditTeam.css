@@ -1,0 +1,16 @@
+.textarea{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.update{
+    background-color: rgb(255, 139, 72);
+    border-radius: 5%;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    
+}
+
+  

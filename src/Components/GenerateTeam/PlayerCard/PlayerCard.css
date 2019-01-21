@@ -1,7 +1,7 @@
 .playercard {
     height: 200px;
     width: 125px;
-    /* border: 3px solid black; */
+    
     background-color: #88f8fe;
     border-radius: 5%;
     margin-top: 10px;
@@ -23,7 +23,7 @@
     font-family: Montserrat;
     text-transform: uppercase;
     color: #EF1E1E;
-    /* text-shadow: 1.5px 1.5px 1px rgb(68, 214, 240); */
+    text-shadow: 1.5px 1.5px 1px rgb(68, 214, 240);
     
     
 }
@@ -38,7 +38,7 @@
     font-weight: bold;
     text-transform: uppercase;
     color: #EF1E1E;
-    /* text-shadow: 1.5px 1.5px 1px rgb(68, 214, 240); */
+    
     border-bottom: 3px solid rgb(255, 178, 90);
     
     
@@ -53,7 +53,3 @@
     bottom: 50px;
     margin-top: 30px;
 }
-/* #abs3{
-    position: absolute;
-    bottom: 80px;
-} */

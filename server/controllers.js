@@ -117,10 +117,8 @@ module.exports = {
             
             teamID++
             teams.push(newTeam)
-           
             
-            
-            res.status(200).send(teams)
+           res.status(200).send(teams)
         
     },
 

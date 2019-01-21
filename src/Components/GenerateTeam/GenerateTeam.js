@@ -3,6 +3,7 @@ import axios from 'axios'
 import './GenerateTeam.css'
 import PlayerCard from './PlayerCard/PlayerCard'
 import SaveButton from './SavedTeams/SaveButton'
+import SavedTeams from './SavedTeams/SavedTeams'
 
 
 
@@ -18,13 +19,14 @@ class GenerateTeam extends Component {
         
         this.generateArray = this.generateArray.bind( this );
     }
+
 componentDidMount(){
 axios.get('/api/players')
     .then((response) => {
         this.setState({
             players: response.data
         })
-       
+       console.log('response', response)
     }) 
   
 }
@@ -68,6 +70,8 @@ render(){
    
     const {players} = this.state;
     let cutPlayers = players.slice(0, 5)
+
+    console.log('state', this.state.players)
     
     
     
@@ -101,8 +105,10 @@ render(){
             {playerss3}
             {playerss4} */}
 
+            <div>
            <SaveButton dreamteam1={cutPlayers} />
-           
+           {/* <SavedTeams /> */}
+           </div>
            
             {playerss}
 

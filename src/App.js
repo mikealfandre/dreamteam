@@ -14,9 +14,31 @@ class App extends Component {
     super()
     this.state = {
 
+      teams: []
+
     }
 
-     
+     this.deleteTeam = this.deleteTeam.bind(this)
+  }
+  componentDidMount(){
+    axios.get('/api/teams')
+    .then((response) => {
+        this.setState({
+            teams: response.data
+        })
+    })
+    
+}
+
+  deleteTeam(id){
+    console.log('deleteteam1', this.state.teams)
+    axios.delete(`/api/deleteteam/${id}`)
+    .then((response) =>{
+      this.setState({
+        teams: response.data
+      })
+    })
+    console.log('deleteteam2', this.state.teams)
   }
 
   
@@ -26,9 +48,15 @@ class App extends Component {
   //   axios.get('/api/whatever')
   // }
 
+  
+
  
 
   render() {
+
+    console.log('updatedTeam', this.state.teams)
+    console.log('deleteteam1', this.state.teams)
+
     return (
       <div className="main">
         
@@ -42,15 +70,18 @@ class App extends Component {
           
 
           
-
+          <div className="saved-teams-container">
+            <SavedTeams deleteTeamFn={this.deleteTeam} />
+          </div>
           
           <div>
             <GenerateTeam />
+            {/* <SaveButton /> */}
           </div>
+
+         
           
-          <div>
-            <SavedTeams />
-          </div>
+          
 
           
          
